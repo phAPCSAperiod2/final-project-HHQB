@@ -13,7 +13,7 @@ public class Game {
     private StringBuilder inputBuffer = new StringBuilder();
     // for cupcake generation timing
     private long lastGeneration;
-    // track if space was pressed (for space+enter to generate cupcake)
+    // track if space was pressed (for space+enter to generate cupcake) wadasdsa
     private boolean spacePressedBeforeEnter = false;
 
     public Game() {
