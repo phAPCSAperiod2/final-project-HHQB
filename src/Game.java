@@ -127,7 +127,7 @@ public class Game {
         }
 
         Building building = buildings.get(index);
-        int price = building.getPrice();
+        double price = building.getPrice();
 
         if (totalCupcakes < price) {
             System.out.println("Not enough cupcakes. You need " + price + ".");
