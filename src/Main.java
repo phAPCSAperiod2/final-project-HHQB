@@ -10,7 +10,7 @@ public class Main {
         Game myGame = new Game();
 
         // 2. Simulate buying buildings
-        System.out.println("Starting game...");
+        System.out.println("Starting game... Press Space then Enter to generate a cupcake");
 
         // 3. Start the game
         myGame.run();
