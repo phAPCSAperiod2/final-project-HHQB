@@ -1,189 +1,95 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=23509009)
-# AP Computer Science A – Final Project
-## Software & Systems Development Capstone
+# Cupcake Clicker
 
-Welcome to your **Final Project repository**.
+A Java clicker game where players generate cupcakes through clicking and strategic building purchases. The game's main purpose is to provide entertainment to bored students as a game that can run idle as they do schoolwork.
 
-This repository will hold:
-- Your complete Java project
-- Your project journal and planning artifacts
-- Your final, working software product
+## Overview
 
-This is not just an assignment — it is a **capstone software project**.
+Cupcake Clicker challenges players to optimize their cupcake production through a variety of buildings and upgrades. Starting with manual clicking, players unlock increasingly powerful buildings that automatically generate cupcakes over time. Strategic upgrades and multipliers allow for exponential growth and progression through the game.
 
----
+## Features
 
-## 📌 Project Overview (Read Carefully)
+- **Manual Clicking**: Generate cupcakes by pressing Space + Enter
+- **Multiple Building Types**: 14+ unique buildings with different production rates and costs
+  - Clicker, Grandma, Farm, Factory, Bank, Temple, Wizard-Tower, Shipment, Alchemy-Lab, Portal, Time-Machine, Antimatter-Condenser, Prism, Chancemaker, Fractal-Engine, and JavaScript-Console
+- **Upgrade System**: Purchase and apply upgrades to boost building efficiency
+- **Production Multipliers**: Strategic multipliers increase production rates across different building types
+- **Real-time Production**: Buildings automatically generate cupcakes every 5 seconds
+- **Interactive CLI**: Command-line interface for game management and building purchases
 
-In this project, you will:
-- Design and build a **real piece of software**
-- Solve **one real problem** for **one clearly defined user**
-- Work using **agile development**
-- Show evidence of **professional software practices**
-- Use AI responsibly as a planning and support tool
+## Project Structure
 
-You will leave this course with something you can confidently say:
+```
+CSA-FINAL-PROJECT/
+├── Main.java              # Entry point for the game
+├── Game.java              # Core game logic and state management
+├── Building.java          # Building definitions and mechanics
+├── Upgrades.java          # Upgrade system and effects
+├── Cupcake.java           # Cupcake tracking utility (isnt used sorry)
+└── README.md              # This file
+```
 
-> “I built this software.”
+## Getting Started
 
----
+### Requirements
 
-## 🔁 Required Workflow (How You Must Work)
+- Java 8 or higher
+- No external dependencies
 
-### ✅ Daily GitHub Commits (Required)
-You are expected to:
-- Make **at least one meaningful commit every class day**
-- Write **descriptive commit messages** that explain:
-  - What you changed
-  - Why you changed it
-  - What goal it supports
+### Installation
 
-✅ Good commit messages:
-- `Sprint 1: Created Player class and tested constructor`
-- `Sprint 2: Implemented 2D map and verified movement logic`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/HHQB/CSA-FINAL-PROJECT.git
+   cd CSA-FINAL-PROJECT
+   ```
 
-🚫 Poor commit messages:
-- `updates`
-- `stuff`
-- `final version`
+2. Compile the Java files:
+   ```bash
+   javac *.java
+   ```
 
-Your commit history is **evidence of your thinking and progress**.
+### Running the Game
 
----
+Execute the main class:
+```bash
+java Main
+```
 
-## 🔁 Agile Development & Sprints
+## How to Play
 
-You will complete **4 sprints**.  
-Each sprint includes:
-- Planning
-- Building
-- Testing
-- Feedback and reflection
+1. **Start the Game**: Run the Main class to begin
+2. **Generate Cupcakes**: Press Space followed by Enter to manually click and generate cupcakes
+3. **Purchase Buildings**: Use accumulated cupcakes to purchase buildings that automatically generate cupcakes
+4. **Buy Upgrades**: Purchase upgrades to increase building production rates
+5. **Progress**: Watch your cupcake production grow exponentially as you unlock more buildings and upgrades
 
-Each sprint ends with:
-- A sprint grade
-- A sprint reflection
-- Feedback exchanged with peers
+## Game Mechanics
 
-🚫 You may NOT complete multiple sprints at once.  
-✅ Each sprint grade is **final**.
+### Cupcake Generation
 
----
+- **Manual Clicking**: Space + Enter generates cupcakes (affected by click multiplier)
+- **Building Production**: Each building generates cupcakes every 5 seconds based on:
+  - Building count
+  - Base production rate
+  - Building-specific multiplier
+  - Global production multiplier
 
-## 🧪 Testing Expectations
+### Building Types
 
-Testing is required every sprint.
+Each building has a unique base production rate and upgrade cost. Purchasing additional buildings increases total production. Upgrades further enhance building efficiency through multiplier bonuses.
 
-✅ Testing may include:
-- Running the program with different inputs
-- Print‑based testing
-- Driver program testing
-- Verifying logic and edge cases
+### Multipliers
 
-You should be able to explain:
-- What you tested
-- How you tested it
-- What you discovered or fixed
+The game features a sophisticated multiplier system:
+- **Click Multiplier**: Affects manual cupcake generation
+- **Production Multiplier**: Global multiplier for all buildings
+- **Building-Specific Multipliers**: Individual multipliers for each building type
 
----
+## Author
 
-## 🗂️ Required Project Components
-
-Your final project must include:
-
-- ✅ Multiple interacting Java classes
-- ✅ Encapsulation (`private` fields, appropriate getters/setters)
-- ✅ Arrays and/or ArrayLists
-- ✅ A purposeful **2D array**
-- ✅ A working driver program (`main`)
-- ✅ A class diagram matching your final code
-- ✅ Clear documentation
-- ✅ A program that runs and works
-
-Inheritance and interfaces are optional but encouraged.
+HHQB - Computer Science A Final Project
 
 ---
 
-## 🤖 Using AI (Allowed, With Responsibility)
+**Enjoy playing Cupcake Clicker!** 🧁
 
-You may use AI to:
-- Organize ideas
-- Plan sprints
-- Debug code
-- Suggest design improvements
-
-You must:
-- Document how you used AI
-- Review and evaluate AI suggestions
-- Understand and explain your final code
-
-AI should act like:
-> A junior developer you supervise — not something that builds the project for you.
-
----
-
-## 📘 Project Journal
-
-All planning, work logs, testing notes, and reflections live in **your project journal**.
-
-If it happened during this project, it should be documented there.
-
----
-
-## ✅ Final Submission Expectations
-
-By the end of the project:
-- Your program should run reliably
-- Your technical requirements should be met
-- Your code should be readable and organized
-- Your repository should look **professional**
-
----
-
-# ✨ Final Step: README Update (Very Important)
-
-When your project is complete, you must **rewrite this README**  
-so it reflects **your software**, not the assignment.
-
-Your final README should include:
-
----
-
-## 🔹 Project Title
-
-## 🔹 What This Software Does
-Explain your project in plain language.
-
-## 🔹 Who It’s For
-Describe the user and the problem being solved.
-
-## 🔹 How to Run the Program
-Clear steps so someone else can run your project.
-
-## 🔹 Technical Overview
-Brief description of:
-- Main classes
-- Key data structures
-- Program logic
-
-## 🔹 Class Diagram
-Include or link your final class diagram.
-
-## 🔹 Known Limitations / Future Improvements
-What works well, and what you would improve with more time.
-
----
-
-## 🎯 Final Reminder
-
-This repository represents **you as a developer**.
-
-Take pride in:
-- Your process
-- Your commits
-- Your code
-- Your documentation
-
-Build something real.  
-Build it thoughtfully.  
-Build it well.
